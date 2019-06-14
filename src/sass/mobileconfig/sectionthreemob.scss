@@ -1,0 +1,66 @@
+#sectionThree {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 400px;
+
+  .wrapper {
+    margin: 0 auto;
+
+    width: 80%;
+    height: 100%;
+    padding-top: 4%;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+    .testimonies {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .testimony {
+        width: 100%;
+        height: 400px;
+        line-height: 24px;
+
+        .comment {
+          padding: 7.5%;
+          width: 100%;
+          height: auto;
+          background-color: white;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+        }
+        .user {
+          margin-top: 30px;
+          .userInfo {
+            display: inline-block;
+            width: 60%;
+            vertical-align: top;
+            margin-left: -15px;
+            padding-top: 7px;
+            h1 {
+              font-size: 16px;
+              margin: 0;
+            }
+            p {
+              line-height: 15px;
+              color: #81736f;
+              font-size: 12px;
+              margin: 0;
+              font-weight: 200;
+            }
+          }
+        }
+      }
+      .testimony:nth-child(2) {
+        display: none;
+      }
+      .testimony:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}

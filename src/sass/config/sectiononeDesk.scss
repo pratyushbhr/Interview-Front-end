@@ -1,0 +1,75 @@
+#sectionOne {
+  height: 60vw;
+  width: 100%;
+  position: relative;
+
+  .overlay {
+    top: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    width: 100%;
+    background-image: url('/images/heroBack.jpg');
+    filter: brightness(15%);
+  }
+
+  .wrapper {
+    z-index: 1;
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    height: 350px;
+
+    .innerWrapper {
+      color: white;
+      width: 700px;
+      height: 100%;
+      margin: 0 auto;
+
+      .title {
+        h1 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: 500;
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .serviceContainer {
+        flex-direction: row;
+
+        display: flex;
+        justify-content: space-around;
+        .serviceBox {
+          border-radius: 5px;
+          border: 1px solid #47433f;
+          height: 200px;
+          width: 200px;
+          .verticalAlign {
+            width: 100%;
+            height: 65%;
+            margin-top: 45px;
+            text-align: center;
+            .icon {
+              width: 64px;
+              margin: 0 auto;
+
+              .mobile {
+                display: none;
+              }
+              .desk {
+                display: block;
+              }
+            }
+            .name {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

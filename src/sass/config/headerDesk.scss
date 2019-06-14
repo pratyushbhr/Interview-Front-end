@@ -1,0 +1,54 @@
+#header {
+  .wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    h1 {
+      float: left;
+      font-weight: 500;
+      color: white;
+      font-size: 20px;
+      line-height: 43px;
+    }
+
+    .logo {
+      color: orangered;
+    }
+
+    nav {
+      a {
+        padding-right: 40px;
+      }
+
+      line-height: 70px;
+      float: right;
+      color: #918987;
+    }
+
+    .contact {
+      svg {
+        margin-left: 20;
+        margin-top: 10;
+      }
+      span {
+        margin-right: 15%;
+        float: right;
+      }
+      margin-top: 17px;
+      line-height: 35px;
+      border-radius: 30px;
+      display: inline;
+      float: right;
+
+      height: 35px;
+      width: 160px;
+      color: white;
+      background-color: orangered;
+    }
+  }
+
+  height: 70px;
+  width: 100%;
+  background-color: #171513;
+}

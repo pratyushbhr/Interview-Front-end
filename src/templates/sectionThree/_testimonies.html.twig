@@ -1,0 +1,27 @@
+<div class="testimonies">
+
+{% set testimonies = [
+  {
+  'testimony': 'Mauris at quam at mauris venatis eleifend. Nullam eleifend odio a pretium dignissim. Aenean non rhoncus quam.',
+  'userName' : 'Rahul Sharma',
+  'role' : 'CFO, Alkymia Pvt Ltd'
+   },
+
+  {
+  'testimony': 'Iunc ut ipsum iaculis, dictum magna id, lacinia ante. Nulla facilisy. Integer lobortis in risus eget volupat. Donec interdum elit eget quam aliquam sodales. Vestibulum auctor auctor finibus',
+  'userName' : 'Anil Amabani',
+  'role' : 'Chairman, Reliance Oil'
+  },
+
+  {
+  'testimony': 'Lauris id bibendum est. Proin dapibus sollicitudin iaculis. Maecenas condimentum maximus laoreet. In maximus euismod egestas',
+  'userName' : 'Suresh Raina',
+  'role' : 'Engineer, Siemens Technology'
+  }
+  
+  ] %}
+ 
+ {% for tes in testimonies %}
+   {% include "_testimony.html.twig" %}
+{% endfor %}
+</div>

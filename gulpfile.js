@@ -27,7 +27,7 @@ gulp.task('sass', () => {
         includePaths: ['./node_modules']
       })
     )
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+    .pipe(autoprefixer({ overrideBrowserslist: ['last 2 versions'] }))
     .pipe(gulp.dest('dist'));
 });
 
@@ -60,7 +60,12 @@ gulp.task('browsersync', () => {
     }
   });
   gulp.watch(
-    ['src/sass/**/*.scss', 'src/js/*.js'],
+    [
+      'src/sass/*.scss',
+      'src/js/*.js',
+      'src/templ/*.js',
+      'src/templates/**/*.html.twig'
+    ],
     gulp.series('build', browserSync.reload)
   );
 });

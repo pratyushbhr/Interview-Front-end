@@ -1,0 +1,86 @@
+/* sectionOne */
+
+#sectionOne {
+  height: 160vw;
+  width: 100%;
+  position: relative;
+
+  .overlay {
+    top: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: 160vw;
+    width: 100%;
+    background-image: url('/images/heroBack.jpg');
+    filter: brightness(15%);
+  }
+
+  .wrapper {
+    z-index: 1;
+    top: 10%;
+    position: absolute;
+    width: 100%;
+    height: 350px;
+
+    .innerWrapper {
+      color: white;
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+
+      .title {
+        h1 {
+          text-align: center;
+
+          font-size: 35px;
+          font-weight: 500;
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .serviceContainer {
+        flex-direction: column;
+
+        display: flex;
+        justify-content: space-around;
+        .serviceBox {
+          border-radius: 5px;
+          border: 1px solid #47433f;
+          height: 80px;
+          width: 100%;
+          margin-bottom: 20px;
+          .verticalAlign {
+            width: 100%;
+            height: 65%;
+            margin-top: 0px;
+            text-align: left;
+            .icon {
+              width: 64px;
+              margin-left: 20px;
+              margin-top: 20px;
+              display: inline-block;
+
+              .desk {
+                display: none;
+              }
+              .mobile {
+                display: inline-block;
+              }
+            }
+            .name {
+              position: absolute;
+              display: inline-block;
+              width: 60%;
+              p {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+#header {
+  .wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      color: white;
+      font-size: 20px;
+      line-height: 43px;
+    }
+
+    .logo {
+      color: orangered;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .contact {
+      right: 20px;
+      position: absolute;
+      svg {
+        margin-left: 20;
+        margin-top: 10;
+      }
+      span {
+        display: none;
+      }
+      margin-top: 17px;
+      line-height: 35px;
+
+      display: inline;
+      float: right;
+
+      height: 35px;
+      width: auto;
+      background-color: transparent;
+    }
+  }
+
+  height: 70px;
+  width: 100%;
+  background-color: #171513;
+}
